@@ -29,7 +29,7 @@ class HomeController extends AbstractController
             /*dd($form->getData());*/
             $emailTest = (new Email())
                 ->from($form->getData()->getEmail())
-                ->to(new Address('firas@stia.group', 'Service Client'))
+                ->to(new Address('contact@safgroupe.fr', 'Service Client'))
                 ->cc('contact@stia.tn')
                 ->subject($form->getData()->getSubject())
                 ->text($form->getData()->getMessage());
